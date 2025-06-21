@@ -1,0 +1,248 @@
+\documentclass[12pt]{report}
+\usepackage{amssymb, slantsc, multicol, color, xcolor, lscape, hyperref}
+\usepackage[fleqn]{amsmath}
+\usepackage[normalem]{ulem}
+
+\usepackage[a4paper,
+            bindingoffset=0.2in,
+            left=0.5in,
+            right=0.5in,
+            top=0.5in,
+            bottom=0.5in,
+            footskip=.25in]{geometry}
+
+\graphicspath{ {./img/} }
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,   
+    urlcolor=cyan,
+}
+
+\DeclareTextFontCommand{\titrematiere}{\large\bfseries}
+
+\DeclareTextFontCommand{\concours}{\normalsize\bfseries}
+
+\NewDocumentCommand\titreexercice{mm}{%
+    \noindent{\footnotesize\bfseries{Exercice #1}} \quad {\scriptsize\bfseries{[#2]}}
+    \vspace{8pt}
+    \newline
+    \footnotesize
+}
+
+\DeclareDocumentCommand{\etoiles}{}{%
+    \begin{center}
+        $\star\star\star$
+    \end{center}
+}
+
+\DeclareDocumentCommand{\subetoiles}{}{%
+    \begin{center}
+        $\ast\ast\ast$
+    \end{center}
+}
+
+\DeclareDocumentCommand{\firstspacer}{}{%
+    \noindent\rule{365.5pt}{0.2pt}
+    \newline
+}
+
+\pagenumbering{gobble}
+
+\begin{document}
+\begin{landscape}
+\begin{multicols*}{2}
+
+\begin{center}
+        {\LARGE\bfseries{Oraux 2025 Wallon}} \\
+        \vspace{10pt}
+        {\LARGE\bfseries{PC/PCE}}
+    \vspace{-10pt}
+\end{center}
+
+\firstspacer
+
+\begin{center}
+    \hypertarget{sommaire}{{\LARGE\bfseries{Sommaire}}}
+    \vspace{10pt}
+\end{center}
+
+
+\begin{enumerate}
+  \item {\large \bfseries {Mathématiques}}
+  \begin{itemize}
+    \item \hyperlink{mth-ccp}{CCINP}
+    \item \hyperlink{mth-mtc}{Mines Télécom}
+    \item \hyperlink{mth-cs1}{Centrale 1}
+    \item \hyperlink{mth-csi}{Centrale Info}
+    \item \hyperlink{mth-mnp}{Mines Ponts}
+    \item \hyperlink{mth-xep}{X-ESPCI}
+    \item \hyperlink{mth-ens}{ENS}
+  \end{itemize}
+  \item {\large \bfseries {Physique}}
+  \begin{itemize}
+    \item \hyperlink{phy-ccp}{CCINP}
+    \item \hyperlink{phy-mtc}{Mines Télécom}
+    \item \hyperlink{phy-cs1}{Centrale 1}
+    \item \hyperlink{phy-csi}{Centrale Info}
+    \item \hyperlink{phy-mnp}{Mines Ponts}
+    \item \hyperlink{phy-xep}{X-ESPCI}
+    \item \hyperlink{phy-ens}{ENS}
+  \end{itemize}
+\end{enumerate}
+
+\newpage
+
+\begin{center}
+    \vspace{-10pt}
+    \titrematiere{Mathématiques}
+\end{center}
+
+\begin{center}
+    \hypertarget{mth-ccp}{\concours{\hyperlink{sommaire}{CCINP}}}
+\end{center}
+
+\etoiles
+
+\input{"./Mathématiques/1 CCINP.tex"}
+
+\newpage
+
+\begin{center}
+    \hypertarget{mth-mtc}{\concours{\hyperlink{sommaire}{Mines Télécom}}}
+\end{center}
+
+\etoiles
+
+\input{"./Mathématiques/2 Mines Télécom.tex"}
+
+\newpage
+
+\begin{center}
+    \hypertarget{mth-cs1}{\concours{\hyperlink{sommaire}{Centrale 1}}}
+\end{center}
+
+\etoiles
+
+\input{"./Mathématiques/3 Centrale 1.tex"}
+
+\newpage
+
+\begin{center}
+    \hypertarget{mth-csi}{\concours{\hyperlink{sommaire}{Centrale Info}}}
+\end{center}
+
+\etoiles
+
+\input{"./Mathématiques/3.1 Centrale Info.tex"}
+
+\newpage
+
+\begin{center}
+    \hypertarget{mth-mnp}{\concours{\hyperlink{sommaire}{Mines Ponts}}}
+\end{center}
+
+\etoiles
+
+\input{"./Mathématiques/4 Mines Ponts.tex"}
+
+\newpage
+
+\begin{center}
+    \hypertarget{mth-xep}{\concours{\hyperlink{sommaire}{X-ESPCI}}}
+\end{center}
+
+\etoiles
+
+\input{"./Mathématiques/5 X-ESPCI.tex"}
+
+\newpage
+
+\begin{center}
+    \hypertarget{mth-ens}{\concours{\hyperlink{sommaire}{ENS}}}
+\end{center}
+
+\etoiles
+
+\input{"./Mathématiques/6 ENS.tex"}
+
+\newpage
+
+\begin{center}
+    \vspace{-10pt}
+    \titrematiere{Physique}
+\end{center}
+
+\begin{center}
+    \hypertarget{phy-ccp}{\concours{\hyperlink{sommaire}{CCINP}}}
+\end{center}
+
+\etoiles
+
+\input{"./Physique/1 CCINP.tex"}
+
+\newpage
+
+\begin{center}
+    \hypertarget{phy-mtc}{\concours{\hyperlink{sommaire}{Mines Télécom}}}
+\end{center}
+
+\etoiles
+
+\input{"./Physique/2 Mines Télécom.tex"}
+
+\newpage
+
+\begin{center}
+    \hypertarget{phy-cs1}{\concours{\hyperlink{sommaire}{Centrale 1}}}
+\end{center}
+
+\etoiles
+
+\input{"./Physique/3 Centrale 1.tex"}
+
+\newpage
+
+\begin{center}
+    \hypertarget{phy-csi}{\concours{\hyperlink{sommaire}{Centrale Info}}}
+\end{center}
+
+\etoiles
+
+\input{"./Physique/3.1 Centrale Info.tex"}
+
+\newpage
+
+\begin{center}
+    \hypertarget{phy-mnp}{\concours{\hyperlink{sommaire}{Mines Ponts}}}
+\end{center}
+
+\etoiles
+
+\input{"./Physique/4 Mines Ponts.tex"}
+
+\newpage
+
+\begin{center}
+    \hypertarget{phy-xep}{\concours{\hyperlink{sommaire}{X-ESPCI}}}
+\end{center}
+
+\etoiles
+
+\input{"./Physique/5 X-ESPCI.tex"}
+
+\newpage
+
+\begin{center}
+    \hypertarget{phy-ens}{\concours{\hyperlink{sommaire}{ENS}}}
+\end{center}
+
+\etoiles
+
+\input{"./Physique/6 ENS.tex"}
+
+\newpage
+
+\end{multicols*}
+\end{landscape}
+\end{document}
