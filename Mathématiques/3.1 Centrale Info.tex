@@ -1,0 +1,147 @@
+\titreexercice{1}{Pierre Q.}
+
+\vspace{-10pt}
+\noindent Soit $E = C^0\left(\lbrack -1; 1 \rbrack, \mathbb{R} \right).$
+          On pose $\displaystyle \langle f|g \rangle = \int_{0}^{1} \left(1-t^2\right)f(t)g(t)dt$.
+
+\vspace{5pt}
+1. Montrer que $\langle f|g \rangle$ est un produit scalaire sur E.
+
+\vspace{5pt}
+\noindent Définissons $E_{pair}$ (resp. $E_{impair}$) l'ensemble des fonctions de E paires (resp. impaires).
+
+\vspace{5pt}
+2.a Montrer que $E = E_{pair} \oplus E_{impair}$.
+
+\vspace{5pt}
+2.b En déduire $E_{pair}^{\perp}$ et $E_{impair}^{\perp}$.
+
+\vspace{10pt}
+\noindent On définit la suite de polynôme $P_0 = 1$, $P_1 = X$, et $P_n(X) = (X-\lambda_n)P_{n-1} + \mu_nP_{n-2}$
+
+\vspace{5pt}
+\noindent avec $\displaystyle \lambda_n = \frac {\langle XP_{n-1} | P_n \rangle} {\|P_{n-1}\|}$
+          et $\displaystyle \mu_n = - \frac {\| P_{n-1} \|^2} {\| P_{n-2} \|^2}$.
+
+\vspace{5pt}
+\noindent On dipose de \lstinline {pn(p, q)} qui renvoit le polynôme $R = (X - \lambda)P + \mu Q$, avec $\lambda$ et $\mu$ définis précédemment.
+
+\vspace{5pt}
+3.a Créer une fonction \lstinline {liste(n)} qui donne les polynômes $(P_0, ..., P_n)$.
+
+\vspace{5pt}
+3.b On dispose d'une fonction \lstinline {affiche(P)}.
+
+Afficher les polynômes $(P_0, ..., P_{10})$. Conjecture ?
+
+\vspace{5pt}
+3.c Créer une fonction qui calcule $\langle P_i|P_j \rangle$ pour $(i, j) \in \llbracket 0;5 \rrbracket^2$. Conjecture ?
+
+\vspace{5pt}
+4.a Montrer le conjectures de 2.
+
+\vspace{5pt}
+4.b Montrer que $\langle P_n | P_{n-1} \rangle = 0$ et $\|P_n\|^2 = \langle XP_{n-1} | P_n \rangle$.
+
+\vspace{5pt}
+4.c  Montrer que $\langle P_n | P_{n-2} \rangle = 0$.
+
+
+
+\subetoiles
+\columnbreak
+
+
+
+\titreexercice{2}{Guillaume V.}
+\noindent Soit E un ev de polynômes dans $\mathbb{R}$.
+
+\noindent On pose $L_0 = 1$, $L_1 = X$, et $(n+2)L_{n+2} = (2n+3)XL_{n+1} - (n+1)L_n$.
+
+\vspace{5pt}
+1. Montrer que $\displaystyle \langle P, Q\rangle = \int_{-1}^{1} P(x)Q(x)dx$ définit un produit scalaire sur E.
+
+\vspace{5pt}
+2. Calculer $L_2$, $L_3$.
+
+\vspace{5pt}
+3. Déterminer le degré des $(L_n)$ ainsi que leur parité.
+
+\vspace{5pt}
+4.a Créer une fonction \lstinline {L(n, x)} renvoyant la valeur de $L_n$ évalué en $x$.
+
+\vspace{5pt}
+4.b On dispose de \lstinline {ps(i, j)} qui renvoie $\langle L_i, L_j\rangle$.
+
+Donner la matrice $A \in \mathcal{M}_7(\mathbb{R})$ telle que
+$[A]_{i,j} = \langle\sqrt{2i+1}L_i, \sqrt{2j+1}L_j\rangle$.
+
+Conjecturer $\langle L_i, L_j\rangle$ pour $i=j$ et $i \neq j$.
+
+\vspace{5pt}
+4.c Afficher les $(L_k)_{k \in \llbracket 0;6 \rrbracket}$ sur $\lbrack -1;1 \rbrack$.
+Conjecturer [quelque chose] sur les racines.
+
+\vspace{5pt}
+\noindent On admet que
+$\displaystyle \forall n \in \mathbb{N}, L_n(X) = \frac {1} {2^nn!} \frac {d^n} {dX^n} \left( (X^2-1)^n \right)$.
+
+\vspace{5pt}
+5.a Montrer la conjecture pour $i \neq j$.
+
+\vspace{5pt}
+5.b Montrer la conjecture pour $i = j$.
+
+\vspace{5pt}
+5.c Montrer la conjecture sur les racines.
+
+\vspace{5pt}
+5.d [quelque chose sur $L_n(0)$].
+
+
+\subetoiles
+\columnbreak
+
+
+
+\titreexercice{3}{Jean C.}
+\noindent Soit $A \in SO_4(\mathbb{R})$ à valeurs propres complexes.
+
+\vspace{5pt}
+1. Rappeler la définition de $SO_n(\mathbb{R})$. Expliciter $SO_2(\mathbb{R})$.
+
+\vspace{5pt}
+2. Montrer que $A$ admet une valeur propre complexe.
+
+\vspace{5pt}
+\noindent On pose $X \in \mathcal{M}_n(\mathbb{C})$ non nulle telle que $X = X_1 + iX_2$.
+
+\noindent Soit $Q \in O_4(\mathbb{R})$ tel que les premières colonnes forment une base de $F$.
+
+\vspace{5pt}
+3. Calculez avec python $Q^\top AQ$.
+
+Remarque : toutes les matrices étaient déjà définies dans python.
+
+\vspace{5pt}
+\noindent On pose $F = \mathrm{Vect}(X_1, X_2)$.
+
+\vspace{5pt}
+4. Montrer que $F$ est un plan stable par $A$.
+
+\vspace{5pt}
+On note $u \in \mathcal{L}(\mathbb{R}^4)$ l'endomorphisme associé à $A$.
+
+\vspace{5pt}
+5. Que peut-on dire de $u(F^\bot)$ ?
+
+\vspace{5pt}
+6. Montrer que $u_F \in SO(F)$.
+
+\vspace{5pt}
+7. Montrer qu'il existe $Q \in O_n(\mathbb{R})$ tel que $Q^\top AQ$ soit diagonale par bloc.
+
+\vspace{5pt}
+8. Généraliser le résultat pour $SO_4(\mathbb{R})$ sans contrainte sur son spectre.
+
+\subetoiles

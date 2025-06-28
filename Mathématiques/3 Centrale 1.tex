@@ -1,0 +1,124 @@
+\titreexercice{1}{Pierre Q.}
+\noindent On pose $\displaystyle f(x) = \int_{0}^{1} \frac {1} {t} \ln(1 - 2 t \cos(x) + t^2)$.
+
+\vspace{5pt}
+1.a Montrer que $f$ est définie sur $\rbrack 0; 2 \pi \lbrack$.
+
+\vspace{5pt}
+1.b Montrer que $f(2 \pi - x) = f(x)$.
+
+\vspace{5pt}
+1.c Montrer que $\displaystyle f\left(\pi - \frac {x} {2}\right) + f\left(\frac {x} {2}\right) = \frac {1} {2} f(x)$.
+
+\vspace{5pt}
+2. Montrer que $f$ est $C^1$ sur $\rbrack 0; 2 \pi \lbrack$, calculer $f'$ puis $f$.
+
+\vspace{5pt}
+3. En déduire le calcul ... (de l'intégrale ci-dessus ?).
+
+
+
+\subetoiles
+
+
+
+\titreexercice{2}{Guillaume V.}
+\noindent Soit $f$ une fonction lipschitzienne de $\mathbb{R}$ dans $\mathbb{R}$.
+
+\vspace{5pt}
+\noindent On pose :
+
+$\displaystyle K :
+\begin{cases}
+  \mathbb{R} \times \rbrack 0; +\infty \lbrack & \longrightarrow \mathbb{R}\\    
+  (x,t) & \longmapsto \displaystyle \frac {1} {\sqrt{4 \pi t}} e^{-\frac {x^2} {4t}}
+\end{cases}
+$
+
+$\;u :
+\begin{cases}
+  \mathbb{R} \times \rbrack 0; +\infty \lbrack & \longrightarrow \mathbb{R}\\    
+  (x,t) & \longmapsto \displaystyle \int_{-\infty}^{+\infty} {K(x-y, t)f(y)dy}
+\end{cases}
+$
+
+\vspace{5pt}
+1. Montrer que $\displaystyle \frac {\partial u} {\partial t} - \frac {\partial^2 u} {\partial x^2} = 0$.
+
+\vspace{5pt}
+2. Montrer que $\displaystyle \lim_{t \to 0} u(x, t) = f(x)$ (on admet l'intégrale de Gauss).
+
+
+
+\subetoiles
+\columnbreak
+
+
+
+\titreexercice{3}{Emilie B.}
+\noindent Soit $\displaystyle f(x) = \int_{0}^{+\infty} \frac {e^{-xt}} {\sqrt{1+t}}$.
+
+\vspace{5pt}
+1. Donner le domaine de définition $D_f$ de $f$, ainsi que les limites de $f$ en ses bornes.
+
+\vspace{5pt}
+2. Montrer que $f$ est de classe $C^1$ et établir une équation différentielle sur $f$.
+
+\vspace{5pt}
+3. On donne $\displaystyle \int_{0}^{+\infty} {e^{-y^2}dy} = \frac {\sqrt{\pi}} {2}$.
+Déterminer un équivalent de $f$ en 0.
+
+
+
+\subetoiles
+
+
+
+\titreexercice{4}{Jean C.}
+\noindent Soit $a = (a_n)$, $b = (b_n)$, et $c = (c_n)$.
+
+\noindent On définit l'opérateur * produit de Cauchy, tel que $c = a * b$
+(ie. $\displaystyle c_n = \sum_{k = 0}^{n} {a_kb_{n-k}}$)
+
+\vspace{5pt}
+1. $(an)_{n \in \mathbb{N}^*}$ ?
+
+\vspace{5pt}
+2. On suppose que $(a_n)$ converge vers $l$, et que $\sum b_n$ CVA.
+
+Montrer que $a*b$ converge vers $\displaystyle l \cdot \sum_{n=0}^{+\infty}{b_n}$.
+
+\vspace{5pt}
+3. $(a_n)$ est définie comme à la question 1.
+
+Montrer que $\displaystyle \sum_{i = 1}^{n} c_i = A \sum_{i = 1}^{n} b_i - \sum_{i = 1}^{n} b_{n-i} \cdot \sum_{j = n+1}^{+\infty} a_j$
+
+
+\vspace{5pt}
+4. On pose $A$, $B$ et $C$ les sommes respectives des séries de terme général $a_n$, $b_n$ et $c_n$.
+
+En utilisant les questions précédentes, montrer que $C = AB$ si $\sum a_n$ et $\sum b_n$ CVA.
+
+
+
+\subetoiles
+
+
+
+\titreexercice{5}{Florian Fe.}
+\noindent On définit $\forall n \in \mathbb{N}$, $\displaystyle u_{n+2} = u_{n+1} + \frac {2} {n+2} u_n$,
+avec $u_0 = u_1 = 1$.
+
+\noindent On définit également, lorsque c'est possible, $S$ : $\displaystyle x \mapsto \sum_{n = 0}^{+\infty} {u_nx^n}$.
+
+\vspace{5pt}
+1. Montrer que $\forall n \in \mathbb{N}^*$, $1 \leqslant u_n \leqslant n^2$.
+
+En déduire le rayon de convergence de $\sum u_nx^n$
+
+\vspace{5pt}
+2. Exprimer $S$ à l'aide de fonctions usuelles.
+
+
+
+\subetoiles

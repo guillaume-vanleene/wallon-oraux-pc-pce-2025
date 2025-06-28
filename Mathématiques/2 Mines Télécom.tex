@@ -1,30 +1,89 @@
-\titreexercice{3}{C D.}
-Démontrer l'équation de Navier-Stokes :
+\titreexercice{1.a}{Raphaël F.}
+\noindent Soit $M \in \mathcal{M}_n(\mathbb{R})$, telle que $M^n = O_n$.
 
-\vspace{-15pt}
-\begin{equation*}
-    \mu \frac {D \boldsymbol {v}} {Dt}
-    = \mu \left(\frac {\partial \boldsymbol {v}} {\partial t} + (\boldsymbol {v} \cdot \boldsymbol {grad}) \boldsymbol {v} \right)
-    = - \boldsymbol {grad} \, P + \mu \boldsymbol {g} + \eta \Delta \boldsymbol {v}
-\end{equation*}
+\vspace{5pt}
+1. Montrer que si $M$ est symétrique, alors $M = O_n$.
 
-L'équation de Schrödinger :
-\begin{equation*}
-    ih \frac{\partial \boldsymbol {\psi}} {\partial t}
-    = \hat {H} \boldsymbol {\psi}
-    = - \frac{\hbar^2}{2m} \Delta \boldsymbol {\psi} + V \boldsymbol {\psi}
-\end{equation*}
+\vspace{5pt}
+1. Montrer que si $MM^\top = M^\top M$, alors $M = O_n$.
 
-Ainsi que les équations de Maxwell :
-\begin{equation*}
-    div \boldsymbol {E} = \frac {\rho} {\epsilon_0}
-\end{equation*}
-\begin{equation*}
-    div \boldsymbol {B} = 0
-\end{equation*}
-\begin{equation*}
-    \boldsymbol {rot} \boldsymbol {E} = - \frac {\partial \boldsymbol {B}} {\partial t}
-\end{equation*}
-\begin{equation*}
-    \boldsymbol {rot} \boldsymbol {B} = \mu_0 \boldsymbol {j} + \mu_0 \epsilon_0 \frac {\partial \boldsymbol {E}} {\partial t}
-\end{equation*}
+
+
+\subetoiles
+
+
+
+\titreexercice{1.b}{Raphaël F.}
+\noindent On pose $\displaystyle H(x) = \int_{0}^{+\infty} \frac {ln(t)} {x^2 + t^2} dt$.
+
+\vspace{5pt}
+1. Donner le domaine de définition de $H$.
+
+\vspace{5pt}
+2. Calculer $H(1)$.
+
+\vspace{5pt}
+3. Trouver une expression de $H$ (ndlr, sans l'intégrale).
+
+
+
+
+\subetoiles
+
+
+
+\titreexercice{2.a}{Gaspard V.}
+\noindent Soient $X$ et $Y$ deux variables aléatoires indépendantes telles que :
+\begin{itemize}
+  \item $X(\Omega) = Y(\Omega) = \mathbb{N}$.
+  \item $\displaystyle \forall k \in \mathbb{N}, \; \mathbb{P}(X = k) = \mathbb{P}(Y = k) = \frac {1+a^k} {4k!}$
+\end{itemize}
+
+
+\vspace{5pt}
+1. Déterminer $a$.
+
+\vspace{5pt}
+2. Déterminer l'espérance de $X$.
+
+\vspace{5pt}
+3. Déterminer la loi de $X + Y$.
+
+
+
+
+\subetoiles
+\columnbreak
+
+
+
+\titreexercice{2.b}{Gaspard V.}
+\noindent Soient $E$ un ev de dimension finie tel que $\dim(E) \geqslant 2$.
+\noindent Soient $f$ et $g$ deux \\ endomorphismes de E vérifiant :
+\begin{itemize}
+  \item $f \circ f = g \circ g = Id_E$.
+  \item $f \circ g + g \circ f = O_{\mathcal{L}(E)}$.
+\end{itemize}
+
+\vspace{5pt}
+1. Montrer que $f$ et $g$ sont des automorphismes diagonalisables.
+
+\vspace{5pt}
+2. Montrer que les deux seules valeurs propres possibles pour $f$ et $g$ appartient à $\{-1; 1\}$.
+
+\vspace{5pt}
+3. Soit $u :  
+\begin{cases}
+  \mathrm{Ker}(f - Id_E) & \longrightarrow \mathrm{Ker}(f + Id_E) \\    
+  x & \longmapsto \displaystyle g(x)
+\end{cases}
+$
+
+Montrer que $u$ est un isomorphisme et en déduire que la dimension de $E$ est paire.
+
+\vspace{5pt}
+4. [non abordé]
+
+
+
+\subetoiles

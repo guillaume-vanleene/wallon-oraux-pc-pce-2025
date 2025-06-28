@@ -1,8 +1,10 @@
 \documentclass[12pt]{report}
-\usepackage{amssymb, slantsc, multicol, color, xcolor, lscape, hyperref}
+\usepackage{amssymb, slantsc, multicol, color, xcolor, lscape, hyperref, stmaryrd, calrsfs}
+\usepackage{units}
 \usepackage[fleqn]{amsmath}
 \usepackage[normalem]{ulem}
-
+\usepackage{listings}
+\usepackage{color}
 \usepackage[a4paper,
             bindingoffset=0.2in,
             left=0.5in,
@@ -17,6 +19,28 @@
     colorlinks=true,
     linkcolor=blue,   
     urlcolor=cyan,
+}
+
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
 }
 
 \DeclareTextFontCommand{\titrematiere}{\large\bfseries}
