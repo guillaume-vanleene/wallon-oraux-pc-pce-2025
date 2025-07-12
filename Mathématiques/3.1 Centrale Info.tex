@@ -2,7 +2,7 @@
 
 \vspace{-10pt}
 \noindent Soit $E = C^0\left(\lbrack -1; 1 \rbrack, \mathbb{R} \right).$
-          On pose $\displaystyle \langle f|g \rangle = \int_{0}^{1} \left(1-t^2\right)f(t)g(t)dt$.
+          On pose $\displaystyle \langle f|g \rangle = \int_{0}^{1} \left(1-t^2\right)f(t)g(t)\mathrm{dt}$.
 
 \vspace{5pt}
 1. Montrer que $\langle f|g \rangle$ est un produit scalaire sur E.
@@ -54,12 +54,12 @@ Afficher les polynômes $(P_0, ..., P_{10})$. Conjecture ?
 
 
 \titreexercice{2}{Guillaume V.}
-\noindent Soit E un ev de polynômes dans $\mathbb{R}$.
+\noindent Soit $E$ un ev de polynômes dans $\mathbb{R}$.
 
 \noindent On pose $L_0 = 1$, $L_1 = X$, et $(n+2)L_{n+2} = (2n+3)XL_{n+1} - (n+1)L_n$.
 
 \vspace{5pt}
-1. Montrer que $\displaystyle \langle P, Q\rangle = \int_{-1}^{1} P(x)Q(x)dx$ définit un produit scalaire sur E.
+1. Montrer que $\displaystyle \langle P, Q\rangle = \int_{-1}^{1} P(x)Q(x)\mathrm{dx}$ définit un produit scalaire sur E.
 
 \vspace{5pt}
 2. Calculer $L_2$, $L_3$.
@@ -99,6 +99,7 @@ $\displaystyle \forall n \in \mathbb{N}, L_n(X) = \frac {1} {2^nn!} \frac {d^n} 
 5.d [quelque chose sur $L_n(0)$].
 
 
+
 \subetoiles
 \columnbreak
 
@@ -130,7 +131,7 @@ Remarque : toutes les matrices étaient déjà définies dans python.
 4. Montrer que $F$ est un plan stable par $A$.
 
 \vspace{5pt}
-On note $u \in \mathcal{L}(\mathbb{R}^4)$ l'endomorphisme associé à $A$.
+\noindent On note $u \in \mathcal{L}(\mathbb{R}^4)$ l'endomorphisme associé à $A$.
 
 \vspace{5pt}
 5. Que peut-on dire de $u(F^\bot)$ ?
@@ -144,4 +145,23 @@ On note $u \in \mathcal{L}(\mathbb{R}^4)$ l'endomorphisme associé à $A$.
 \vspace{5pt}
 8. Généraliser le résultat pour $SO_4(\mathbb{R})$ sans contrainte sur son spectre.
 
+
+
 \subetoiles
+\columnbreak
+
+
+
+\titreexercice{4}{Paul C.}
+\noindent Soit $A \in \mathcal{M}_n(\mathcal{R})$. On dit que :
+\begin{itemize}
+  \item A vérifie $(P)$ si : $\exists (S,N) \in  \mathcal{M}_n(\mathbb{K})^2, r \geqslant 1 \;/\; S^\top = S, N^r = 0$ et $NS = SN$ \\
+  \item A est p-symétrique si : $\mathrm{Cp}(A) = 0$, où $\displaystyle \mathrm{Cp}(A) = \sum_{k=0}^{p}(-1)^k\dbinom{p}{k}(A^\top)^kA^{p-k}$ \\
+\end{itemize}
+
+\noindent On dispose des fonctions suivantes :
+\begin{itemize}
+  \item \lstinline {gen(A)} : Génère une matrice A vérifiant P dont les coefficients sont composées de 1 et de -1 \\
+  \item \lstinline {binom(p, k)} : Calcul le coefficient binomial \\
+  \item \lstinline {test(A)} : test si la matrice A est nulle ou non \\
+\end{itemize}

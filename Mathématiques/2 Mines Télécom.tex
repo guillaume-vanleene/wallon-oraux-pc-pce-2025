@@ -5,7 +5,7 @@
 1. Montrer que si $M$ est symétrique, alors $M = O_n$.
 
 \vspace{5pt}
-1. Montrer que si $MM^\top = M^\top M$, alors $M = O_n$.
+2. Montrer que si $MM^\top = M^\top M$, alors $M = O_n$.
 
 
 
@@ -14,7 +14,7 @@
 
 
 \titreexercice{1.b}{Raphaël F.}
-\noindent On pose $\displaystyle H(x) = \int_{0}^{+\infty} \frac {ln(t)} {x^2 + t^2} dt$.
+\noindent On pose $\displaystyle H(x) = \int_{0}^{+\infty} \frac {\ln(t)} {x^2 + t^2}\mathrm{dt}$.
 
 \vspace{5pt}
 1. Donner le domaine de définition de $H$.
@@ -58,7 +58,7 @@
 
 
 \titreexercice{2.b}{Gaspard V.}
-\noindent Soient $E$ un ev de dimension finie tel que $\dim(E) \geqslant 2$.
+\noindent Soit $E$ un ev de dimension finie tel que $\dim(E) \geqslant 2$.
 \noindent Soient $f$ et $g$ deux \\ endomorphismes de E vérifiant :
 \begin{itemize}
   \item $f \circ f = g \circ g = Id_E$.
@@ -72,7 +72,7 @@
 2. Montrer que les deux seules valeurs propres possibles pour $f$ et $g$ appartient à $\{-1; 1\}$.
 
 \vspace{5pt}
-3. Soit $u :  
+3. Soit $u :
 \begin{cases}
   \mathrm{Ker}(f - Id_E) & \longrightarrow \mathrm{Ker}(f + Id_E) \\    
   x & \longmapsto \displaystyle g(x)
@@ -82,8 +82,85 @@ $
 Montrer que $u$ est un isomorphisme et en déduire que la dimension de $E$ est paire.
 
 \vspace{5pt}
-4. [non abordé]
+4. [non abordée]
 
 
 
 \subetoiles
+
+
+\titreexercice{2.a}{Ilyes B.}
+\noindent Soit $(X_n)$ une suite d'évènement indépendants suivant une loi de Bernouilli $p \in \lbrack 0;1 \rbrack$.
+
+\vspace{5pt}
+1. On pose $U_k = X_kX_{k+1}$. Déterminer la loi, l'espérance, et la variance des $Y_k$.
+
+\vspace{5pt}
+2. On pose $\displaystyle S_n = \sum_{k=1}^{N}Y_k$. Déterminer la loi, l'espérance, et la variance de $S_n$.
+
+\vspace{5pt}
+3. Montrer que $\mathbb{P}\left( |F_n - p| \geqslant 0 \right) \xrightarrow[k \rightarrow +\infty]{} 0$, où $\displaystyle F_n = \frac {\sum_{k=1}^{n}S_k} {n}$.
+
+
+
+\subetoiles
+
+
+
+\titreexercice{2.b}{Ilyes B.}
+\noindent On pose $\displaystyle f : x \mapsto \sum_{n=1}^{+\infty} \frac {1} {n + n^2x}$.
+
+\vspace{5pt}
+1. Montrer que $f$ est bien définie sur $\rbrack 0; +\infty \lbrack$. Etudier sa continué sur $\rbrack 0; +\infty \lbrack$.
+
+\vspace{5pt}
+2. Montrer que $f$ est $C^1$.
+
+\vspace{5pt}
+3. Donner un équivalent de $f$ en 0.
+
+
+
+\subetoiles
+\columnbreak
+
+
+
+\titreexercice{3.a}{Paul C.}
+\noindent Soit $X \thicksim P(\lambda)$, $\lambda > 0$.
+
+\vspace{5pt}
+1. Déterminer l'espérance de $\exp(tX)$, avec $t > 0$. Préciser son existence.
+
+\vspace{5pt}
+2. Soit $n \in \mathbb{N}^*$. Montrer que $\forall t > 0$, $\mathbb{P}(X \geqslant n) \leqslant \mathrm{e}^{-tn}\,\mathbb{E}(\exp(tX))$.
+
+\vspace{5pt}
+3. Montrer que $\displaystyle \sum_{k = n}^{+\infty} \frac {\lambda_k} {k!} \leqslant \left( \frac {\lambda} {n} \right)^ne^n$ ($n \in \mathbb{N}^*$).
+
+
+
+\subetoiles
+
+
+
+\titreexercice{3.b}{Paul C.}
+\noindent Soit $x \in \mathbb{R}^n$, $x = (x_1, ..., x_n)$, $(a,b) \in \mathbb{R}^2$.
+
+\noindent On pose $\displaystyle f(x) = (a-b)^2 + \sum_{i=1}^{n}(x_i-a)^2 + \sum_{i=1}^{n}(x_i-b)^2 + \sum_{i \leqslant i,j \leqslant n}^{n}(x_i-x_j)^2$.
+
+\noindent Pour tout $x \in \mathbb{R}$, on note $\displaystyle \|y\| = \sqrt{\langle y|y \rangle}$.
+
+\vspace{10pt}
+1. Montrer que $\forall x \in \mathbb{R}^n$, $\displaystyle f(x) \geqslant \|x-u\|^2 +  \|x-v\|^2 \geqslant (\|x\| - \|u\|)^2 + (\|x\| - \|v\|)^2$
+où $
+\begin{cases}
+  u = (a, ..., a) & \\    
+  v = (b, ..., b) &
+\end{cases}$
+
+\vspace{5pt}
+2. Montrer que $\exists R > 0 \;/\; \forall x \in \mathbb{R}^n, \|x\| > R \Rightarrow f(x) > f(0)$.
+
+\vspace{5pt}
+3. Déterminer le minimum global de $f$ sur $\mathbb{R}^n$.

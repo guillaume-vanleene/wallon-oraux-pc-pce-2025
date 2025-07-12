@@ -1,16 +1,107 @@
-\titreexercice{1}{ -- }
-\noindent On pose, pour $(P,Q) \in \mathbb{R}_2[X]^2,$
+\titreexercice{1.a}{Marion L.}
+\noindent On munit $\mathcal{M}_n(\mathbb{R})$ de son produit scalaire canonique.
 
-\vspace{-15pt}
-\begin{equation*}
-    \langle {P, Q} \rangle = P(0)Q(0) + P(1)Q(1) + P(2)Q(2)
-\end{equation*}
-\vspace{-15pt}
+\noindent Soit $A$ et $B$ deux matrices symétrique réelles telles que $A^2=B^2$.
 
-1. Montrer que $\langle {P, Q} \rangle$ est un produit scalaire sur $\mathbb{R}_2[X]$.
+\noindent On souhaite montrer dans cet exercice qu'il existe $P$ orthogonal tel que $PA = B$.
 
-\vspace{1pt}
-2. Déterminer une base orthonormée sur $\mathbb{R}_2[X]$.
+\noindent On admet que pour $D$ une matrice diagonale, $\mathrm{rg}(D) = \mathrm{rg}(D^2)$.
+
+\vspace{5pt}
+1. Soit $X \in \mathcal{M}_{n,1}(\mathbb{R})$. Etablir que $(AX)^\top AX = (BX)^\top BX$.
+
+\vspace{5pt}
+2. On suppose que $0$ n'est pas valeur propre de $A$.
+
+\vspace{5pt}
+\;\;\; 2.a Justifier que $A$ est inversible, et montrer que $BA^{-1}$ est orthogonale.
+
+\vspace{5pt}
+\;\;\; 2.b Conclure.
+
+\vspace{5pt}
+3. On suppose que $0$ est valeur propre de $A$ d'ordre de multiplicité $p$.
+
+\vspace{5pt}
+\;\;\; 3.a Montrer que $\mathrm{Im}(A) = \mathrm{Im}(A^2)$, puis que $\mathrm{Im}(A) = \mathrm{Im}(B)$.
+
+\vspace{5pt}
+\;\;\; 3.b Montrer que $\mathrm{Ker}(A) = \mathrm{Ker}(B)$, puis $0$ est valeur propre de $B$ d'un ordre de multiplicité que l'on déterminera.
+
+\vspace{5pt}
+\noindent Soit $R$ orthogonale telle que : $R^\top AR =
+\begin{pmatrix}
+0 & 0 \\
+0 & \Delta \\
+\end{pmatrix}
+$
+et $R^\top BR = 
+\begin{pmatrix}
+0 & 0 \\
+0 & H \\
+\end{pmatrix}
+$ \\
+où $(\Delta, H) \in S_{n-p}(\mathbb{R})^2$ sont inversibles et telles que $\Delta^2 = H^2$.
+
+\vspace{5pt}
+4. Montrer qu'il existe $P$ orthogonale telle que $PA = B$ (on s'aidera de 2.).
+
+\vspace{5pt}
+5. Démontrer la propriété précédemment admise.
+
+
+\subetoiles
+
+
+
+\titreexercice{1.b}{Marion L.}
+\noindent Soit $\displaystyle \int_{1}^{+\infty} \frac {\mathrm{Arctan}(x)} {x^2}\mathrm{dx}$.
+
+\vspace{5pt}
+1. Etudier la convergence de cette intégrale.
+
+\vspace{5pt}
+2. Calculer cette intégrale.
+
+
+\subetoiles
+\columnbreak
+
+
+
+\titreexercice{2.a}{Hugo D.}
+\noindent Soit $E$ un sev de dimension $n \geqslant 2$ muni d'un produit scalaire et $S = \{x \in E \,/\; \|x\| = 1\}$.
+
+\noindent Soit $u$ un endormophisme autoadjoint, et $q(x) = \langle x | u(x) \rangle$.
+
+\vspace{5pt}
+1. On se place dans le cas où n = 2. Soit $A =
+\begin{pmatrix}
+2 & 1 \\
+1 & 2 \\
+\end{pmatrix}
+$, matrice de u.
+
+Montrer que $u$ est autoadjoint, déterminer son spectre, et montrer que les vecteurs colonnes de $A$ forment une BON de $\mathbb{R}^2$.
+
+\vspace{5pt}
+2.a Montrer que $\displaystyle q(x) = \sum_{i = 1}^{n} x_i^2\lambda_i$,
+avec $x_1, ..., x_n$ des vecteurs propres associés aux valeurs propres $\lambda_1, ..., \lambda_n$.
+
+\vspace{5pt}
+2.b En déduire que $\max\left\{q(x), x \in S\right\} = \lambda_n$.
+
+\vspace{5pt}
+3. Soit $E_k = Vect(e_1, ..., e_k)$.
+
+\vspace{5pt}
+\;\;\; 3.a Montrer que $\max \left\{q(x), x \in S \cap E_k \right\} = \lambda_k$.
+
+\vspace{5pt}
+\;\;\; 3.b Montrer que  $E_k = Vect(e_1, ..., e_k)$.
+
+\vspace{5pt}
+4. et 5. [non abordées]
 
 
 
@@ -18,19 +109,54 @@
 
 
 
-\titreexercice{2}{ -- }
-\noindent On considère l'espace euclidien $\mathbb{R}[X]$ ($n \geqslant 3$) muni du produit scalaire :
+\titreexercice{2.b}{Hugo D.}
+\noindent Soit $u_n$ une suite monotone.
+On pose $\displaystyle M_n = \frac {1} {n} \sum_{k = 1}^{n} u_k$.
 
-\vspace{-15pt}
-\begin{equation*}
-    \langle {P, Q} \rangle = \int_{-1}^{1}P(t)Q(t)dt
-\end{equation*}
-\begin{enumerate}
-    \vspace*{-10pt}
-    \item Déterminer $\displaystyle P_{\mathbb{R}_2[X]}(X^3)$.
-    \vspace*{-5pt}
-    \item Calculer $\displaystyle min\left\{\int_{-1}^{1}{(t^3 - (at^2 + bt + c))^2dt, (a,b,c) \in \mathbb{R}^3}\right\}$
-\end{enumerate}
+\vspace{5pt}
+\noindent Montrer que $M_n$ est une suite monotone.
+
+
+
+\subetoiles
+\columnbreak
+
+
+
+\titreexercice{3.a}{Cyrian D.}
+\noindent Soit $x \in \mathbb{R}_+$. Soit $n \in \mathbb{N}^*$.
+\noindent On pose
+$\; f_n :
+\begin{cases}
+  \mathbb{R}_+  & \longrightarrow \mathbb{R}\\    
+  x & \longmapsto \displaystyle \frac {1} {n + n^2x}
+\end{cases}
+$
+
+\noindent On définit $\displaystyle f(x) = \sum_{n=1}^{+\infty}f_n(x)$ lorsque c'est possible.
+\noindent On pose $g(x) = xf_n(x)$.
+
+\vspace{5pt}
+1. Montrer que $f$ est définie.
+
+\vspace{5pt}
+2.a Montrer que $f$ est monotone sur $\mathbb{R}_+^*$.
+
+\vspace{5pt}
+2.b Montrer que $f$ est $C^0$ sur $\mathbb{R}_+^*$.
+
+\vspace{5pt}
+3.a Montrer que $\displaystyle \lim_{x\to\infty} f(x) = 0$ est $C^0$ sur $\mathbb{R}_+^*$.
+
+\vspace{5pt}
+3.b Montrer que $\sum g_n$ CVN.
+
+\vspace{5pt}
+4. Montrer qu'il existe $A > 0$, tel que $\displaystyle f(x) \; \substack{\sim \\ x\to\infty} \; \frac {A} {x}$.
+
+\vspace{5pt}
+5. [non abordée]
+
 
 
 
@@ -38,15 +164,25 @@
 
 
 
-\titreexercice{3}{ -- }
-\noindent Soit $E = \mathcal{C}^1([0,1], \mathbb{R})$.
 
-\noindent On pose pour tout $f \in E$ :
-\begin{equation*}
-    \|f\|_0 = \sqrt{(f(0))^2 + \int_{0}^{1} f'(t)dt}
-\end{equation*}
+\titreexercice{3.b}{Cyrian D.}
+\noindent Soit $A \in \mathcal{M}_n(\mathbb{R})$, $A =
+\begin{pmatrix}
+0 & 1 & 0 & . & 0 \\
+1 & 0 & 1 & . & 0 \\
+0 & 1 & 0 & . & 0 \\
+. & . & . & . & 1 \\
+0 & 0 & 0 & 1 & 0 \\
+\end{pmatrix}
+$.
 
-1. Montrer que $||\cdot||_0$ est une norme.
+\noindent Soit $\lambda \in \mathbb{R}$.
 
-2. Soit pour tout $n \in \mathbb{N}^*$, $\displaystyle f_n : x \in [0,1] \rightarrowtail \frac {\sin(n\pi x)} {n^2}$ \\
-\indent \quad \,Montrer que $(f_n)_{n \in \mathbb{N}^*}$ converge pour la norme $\|\cdot\|_0$.
+\vspace{5pt}
+1. Montrer que $\mathrm{rg}(A-\lambda I_n)$ vaut $n-1$ ou $n$.
+
+\vspace{5pt}
+2. $A$ est-elle diagonalisable ?
+
+\vspace{5pt}
+3. Si $\lambda$ est valeur propre, quel est son ordre de multiplicité ?
