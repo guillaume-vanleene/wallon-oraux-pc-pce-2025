@@ -165,3 +165,41 @@ Remarque : toutes les matrices étaient déjà définies dans python.
   \item \lstinline {binom(p, k)} : Calcul le coefficient binomial \\
   \item \lstinline {test(A)} : test si la matrice A est nulle ou non \\
 \end{itemize}
+
+\vspace{5pt}
+1. Soit $X  = 
+\begin{pmatrix}
+  x_1 \\ .. \\ x_n 
+\end{pmatrix} \in \mathcal{M}_n(\mathbb{C})$.
+
+Montrer que $\overline{X}^\top X \in \mathbb{R}^+$, puis montrer que $\overline{AX} = A\overline{X}$.
+
+\vspace{5pt}
+2. Soit $(\lambda, \mu) \in \mathrm{Sp}_\mathbb{C}(A)$, et $(X,Y)$ des vecteurs propres respectivement associés à $\lambda$ et $\mu$.
+
+Calculer $Y^\top Cp(A)X$.
+
+\vspace{5pt}
+\noindent Dans la suite, on suppose $p \geqslant 1$ et $A$ $p$-symétrique.
+
+\vspace{5pt}
+3. Montrer que les valeurs propres de $A$ sont réelles.
+
+\vspace{5pt}
+4. Soit $(\lambda, \mu) \in \mathrm{Sp}_\mathbb{R}(A)$, distinctes, montrer que $E_\lambda(A)$ et $E_\mu(A)$ sont orthogonaux.
+
+En déduire que les matrices $p$-symétriques sont diagonalisables.
+
+\vspace{5pt}
+5. Ecrire la fonction \lstinline {psym(A)} qui renvoie s'il existe $p \in \llbracket 1; 2n \rrbracket$ tel que $A$ soit $p$-symétrique.
+
+Tester pour $n \in \llbracket 2, 20 \rrbracket$ et générer $A$ par la fonction \lstinline {gen}.
+
+Que peut-on conjecturer ?
+
+\vspace{5pt}
+6. Ecrire la fonction \lstinline {combi(p, q, m)} où $(p, q, m) \in \mathbb{N}^3$ tels que $n+q < p$ renvoyant la somme suivante :
+$\displaystyle \sum_{k=m}^{p} (-1)^k \binom {p} {k} \binom {k} {m} \binom {p-q} {k}$.
+
+\vspace{5pt}
+7. [non traitée]
