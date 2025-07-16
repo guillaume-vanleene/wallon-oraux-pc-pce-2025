@@ -246,7 +246,7 @@ $.
 
 \titreexercice{6.a}{Marion L.}
 \noindent Soit $X$ et $Y$ deux variables aléatoires indépendantes et indentiquement distribuées, qui suivent
-une loi uniforme sur $\{0, 1\}$.
+une loi uniforme sur $\{-1, 0, 1\}$.
 
 \noindent Soit $A(X, Y) = 
 \begin{pmatrix}
@@ -272,7 +272,7 @@ $.
 
 
 \titreexercice{6.b}{Marion L.}
-\noindent Soit $f : \mathbb{R} \mapsto \mathbb{R}$ deux fois dérivables telle que
+\noindent Soit $f : \mathbb{R} \rightarrow \mathbb{R}$ deux fois dérivables telle que
 $\forall x \in \mathbb{R}, f''(x) + f(-x) = x$.
 
 \vspace{5pt}
@@ -282,7 +282,7 @@ $\forall x \in \mathbb{R}, f''(x) + f(-x) = x$.
 1. Démontrer que $g$ est une solution paire de l'équation différentielle $y'' + y = 0$.
 
 \vspace{5pt}
-2. Déterminer les fonctions $f : \mathbb{R} \mapsto \mathbb{R}$ solutions de l'équation :
+2. Déterminer les fonctions $f : \mathbb{R} \rightarrow \mathbb{R}$ solutions de l'équation :
 \begin{equation*}
   \forall x \in \mathbb{R}, f''(x) + f(-x) = x
 \end{equation*}
@@ -319,3 +319,186 @@ $\displaystyle \sum_{n=1}^{+\infty} \frac {(-1)^n} {(2n+1)(2n-1)} x^{2n+1}$.
 
 \vspace{5pt}
 \noindent Trouver la rayon de convergence $R$, puis pour $|x| < R$, calculer la somme de cette série.
+
+
+
+\subetoiles
+
+
+
+\titreexercice{7.a}{Hugo S.}
+\noindent Soient $n \in \mathbb{N}, n\geqslant 3, M = (m_{i,j})_{(i,j) \in \llbracket 1;n \rrbracket^2}$
+avec $(m_{i,j}) = 
+\begin{cases}
+  1 & \mathrm{si} \ i = 1 \\
+  1 & \mathrm{si} \ i = n \\
+  1 & \mathrm{si} \ j = 1 \\
+  1 & \mathrm{si} \ i = n \\
+  0 & \mathrm{sinon}
+\end{cases}
+$
+
+\vspace{5pt}
+\noindent Déterminer les valeurs propres de $M$, et donner un polynômme annulateur de $M$ de degré 3.
+
+
+
+\subetoiles
+\columnbreak
+
+
+
+\titreexercice{7.b}{Hugo S.}
+\noindent Soit $\displaystyle F : x \mapsto \int_{0}^{+\infty} \ln(t)e^{-xt}\mathrm{dt}$.
+
+\vspace{5pt}
+1. Montrer que $F$ est $C^1$ sur $\mathbb{R}^*_+$.
+
+\vspace{5pt}
+2. Donner une équation différentielle vérifiée par $F$.
+
+
+
+\subetoiles
+
+
+
+\titreexercice{8.a}{Cyprien M.}
+\noindent On pose $\displaystyle u_n = \int_{n}^{2n} \frac {\mathrm{dt}} {1 + t^\frac {3} {2}}$.
+
+\vspace{5pt}
+\noindent Quelle est la nature de $\sum u_n$ ?
+
+
+
+\subetoiles
+
+
+
+\titreexercice{8.b}{Cyprien M.}
+\noindent Un avion possède $n$ places ($n \geqslant 2$).
+
+\noindent Les passagers choisissent à tour de rôle leur place de cette façon :
+\begin{itemize}
+  \item Le premier est étourdi et choisit une place au hasard.
+  \item Les suivants essayent d'aller à leur place :
+  \begin{itemize}
+    \item Si elle est libre, ils la prennent.
+    \item Sinon, ils choisissent une place au hasard.
+  \end{itemize}
+\end{itemize}
+
+\noindent On note $X_i$ la place prise par le passager $i$-ème passager.
+
+\vspace{5pt}
+1. Quelle est la loi de $X_1$ ?
+
+\vspace{5pt}
+2. Calculer $\mathbb{P}(X_n = n | X_1 = 1)$ et $\mathbb{P}(X_n = n | X_1 = n)$.
+
+\vspace{5pt}
+3. Calculer $\mathbb{P}(X_i = i | X_1 = k \cap X_k = 1)$ avec $k \in \llbracket 2; i-1 \rrbracket$.
+
+\vspace{5pt}
+4. On note $p_n = \mathbb{P}(X_n = n)$.
+
+Montrer que : $\forall k \in \llbracket 2; n-1 \rrbracket, \mathbb{P}(X_n = n | X_1 = k) = p_{n-k+1}$.
+
+\vspace{5pt}
+5. Montrer que : $\displaystyle \mathbb{P}(X_n = n) = \frac {1} {n} \left(1+ \sum_{i=2}^{n-1}p_i\right)$.
+
+\vspace{5pt}
+6. Montrer que $p_n$ est constante.
+
+\vspace{5pt}
+Remarque de l'examinateur : $p_n$ ne correspond pas à la probabilité que le $n$-ième passager soit bien placé,
+mais bien que celui ci soit bien placé dans un avion à $n$ places.
+
+
+
+\subetoiles
+
+
+
+\titreexercice{9.a}{Leena G.}
+\noindent On pose $D = \{ (x,y) \in \mathbb{R}^2 \ / \ |x|  \leqslant 1$ et $|y| \leqslant 2 \}$.
+
+\vspace{5pt}
+\noindent On définit $f :
+\begin{cases}
+  D & \longrightarrow \mathbb{R} \\
+  (x,y) & \mapsto e^{xy} - x
+\end{cases}
+$.
+
+\vspace{5pt}
+1. Montrer que $f$ admet un maximum sur $D$ et l'étudier.
+
+\vspace{5pt}
+2. [non abordée]
+
+
+
+\subetoiles
+
+
+
+\titreexercice{9.b}{Leena G.}
+\noindent On pose $\forall n \in \mathbb{N}, (a_0, ..., a_n) \in \mathbb{R}, P \in \mathbb{R}_n[X]$.
+
+\vspace{5pt}
+\noindent On définit $\displaystyle \phi(P) = \sum_{k=0}^{n} P(a_k)x^k$.
+
+\vspace{5pt}
+1. Montrer que $\phi$ est un endomorphisme de $E$.
+
+\vspace{5pt}
+2. Déterminer une condition nécessaire et suffisante pour que $\phi$ soit un \\   automorphisme de $E$.
+
+\vspace{5pt}
+3. [non abordée]
+
+
+
+\subetoiles
+
+
+
+\titreexercice{9.a}{Kamel R.}
+\noindent Soit $E = \mathbb{R}[X]$. On pose
+$\displaystyle \forall n \in \mathbb{N}, I_n = \int_{0}^{+\infty} e^{-t}t^n\mathrm{dt} = n!$.
+
+\vspace{5pt}
+1. Montrer que $\displaystyle \langle P|Q \rangle = \int_{0}^{+\infty} e^{-t}P(t)Q(t)\mathrm{dt}$ est un produit scalaire.
+
+\vspace{5pt}
+2. Déterminer le projeté orthogonal de $X^2$ sur $\mathbb{R}_1[X]$.
+
+\vspace{5pt}
+3. Déterminer selon $a$ et $b$, le minimum de $\displaystyle \int_{0}^{+\infty}e^{-t}(t^2-at+b)^2\mathrm{dt}$.
+
+
+
+\subetoiles
+\columnbreak
+
+
+
+\titreexercice{9.b}{Kamel R.}
+
+1. Rappeler l'expression trigonmétrique de $\tan(a-b)$ selon $\tan(a)$ et $\tan(b)$.
+
+\vspace{5pt}
+2. Montrer que la série de terme général $\displaystyle u_n = \mathrm{Arctan}\left(\frac {1} {n^2 + 3n +3}\right)$ converge.
+
+\vspace{5pt}
+3. Posons $a = \mathrm{Arctan}(n+2)$, et $b = \mathrm{Arctan}(n+1)$.
+
+\vspace{5pt}
+\quad 3.a Calculer $\mathrm{tan}(a-b)$.
+
+\vspace{5pt}
+\quad 3.b En déduire $a-b$.
+
+\vspace{5pt}
+\quad 3.c En déduire la valeur de $\displaystyle \sum_{n=0}^{+\infty}u_n$.
